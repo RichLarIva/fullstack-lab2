@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import EmployeePage from './components/EmployeeForm'
-import './App.css'
-import MainPage from './pages/MainPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import EmployeePage from './components/EmployeeForm';
+import './App.css';
+import MainPage from './pages/MainPage';
+import AssignmentForm from './components/AssignmentForm';
 
-const App = () => 
-{
-
+const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        {/* Add more routes as needed */}
-        {/* <Route path="/projects" element={<ProjectPage />} /> */}
-      </Routes>
+      <div>
+        <p>Welcome</p>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          {/* <Route path="/assign" element={<AssignmentForm />} /> */}
+          <Route path="/employee" element={<EmployeePage />} />
+          {/* <Route path="/projects" element={<ProjectPage />} /> */}
+        </Routes>
+      </div>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;

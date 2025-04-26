@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 // Set up Axios to connect to the backend
 const api = axios.create({
-    baseURL: `http://localhost:${PORT}/api/v1`,
+    baseURL: `http://localhost:${5901}/api/v1`,
     headers: {
         "Content-Type": "application/json",
     },
