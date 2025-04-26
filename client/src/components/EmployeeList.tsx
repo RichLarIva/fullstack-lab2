@@ -25,9 +25,20 @@ const EmployeeList = () => {
       {employees.length === 0 ? (
         <p>No employees found.</p>
       ) : (
-        employees.map((employee) => (
-          <EmployeeItem key={employee._id} employee={employee} />
-        ))
+        <table>
+            <thead>
+                <tr>
+                <th>Employee ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {employees.map((employee) => (
+                <EmployeeItem key={employee._id} employee={employee} />
+                ))}
+            </tbody>
+        </table>
       )}
     </div>
   );

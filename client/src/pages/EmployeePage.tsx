@@ -18,7 +18,6 @@ const EmployeePage = () =>
       <button onClick={toggleView}>
         {showForm ? "View Employees" : "Add New Employee"}
       </button>
-
       {showForm ? <EmployeeForm /> : <EmployeeList />}
     </>
   )

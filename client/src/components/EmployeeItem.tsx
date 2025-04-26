@@ -6,11 +6,11 @@ interface EmployeeItemProps {
 
 const EmployeeItem = ({employee}: EmployeeItemProps) => {
     return (
-        <div className="employee-item">
-            <h3>Employee ID: {employee.employee_id}</h3>
-            <p>{employee.full_name}</p>
-            <p>Email: {employee.email}</p>
-        </div>
+        <tr className="employee-item">
+            <td>Employee ID: {employee.employee_id}</td>
+            <td>{employee.full_name}</td>
+            <td>Email: {employee.email}</td>
+        </tr>
     );
 }
 

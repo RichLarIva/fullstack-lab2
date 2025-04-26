@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const backendPort = import.meta.env.PORT || 5000;
+const backendPort = import.meta.env.PORT || 5901;
 
 // Set up Axios to connect to the backend
 const api = axios.create({

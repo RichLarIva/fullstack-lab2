@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import EmployeePage from './components/EmployeeForm';
+import { Routes, Route } from 'react-router-dom';
+import EmployeePage from './pages/EmployeePage';
 import './App.css';
 import MainPage from './pages/MainPage';
 import AssignmentForm from './components/AssignmentForm';
