@@ -4,7 +4,7 @@
   "main": "server/index.ts",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server/index.ts",
+    "server": "nodemon server/src/index.ts",
     "client": "cd frontend && npm run dev"
   },
   "author": "",
