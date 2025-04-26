@@ -21,3 +21,16 @@ export const addProject = async(req: Request, res: Response): Promise<void> =>
         res.status(500).json({ message: (err as Error).message });
     }
 }
+
+export const getProjects = async(req: Request, res: Response): Promise<void> => 
+{
+    try
+    {
+        const projects = await Project.find().sort({ project_code: 1 });
+        res.json(projects);
+    }
+    catch (err)
+    {
+        res.status(500).json({ message: (err as Error).message });
+    }
+}

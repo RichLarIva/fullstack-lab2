@@ -20,3 +20,15 @@ export const addEmployee = async (req: Request, res: Response): Promise<void> =>
     res.status(500).json({ message: (err as Error).message });
   }
 };
+
+export const getEmployees = async (req: Request, res: Response): Promise<void> => {
+  try 
+  {
+    const employees = await Employee.find().sort({ employee_id: 1 });
+    res.json(employees);
+  } 
+  catch (err) 
+  {
+    res.status(500).json({ message: (err as Error).message });
+  }
+};
