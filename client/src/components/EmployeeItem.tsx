@@ -7,9 +7,9 @@ interface EmployeeItemProps {
 const EmployeeItem = ({employee}: EmployeeItemProps) => {
     return (
         <tr className="employee-item">
-            <td>Employee ID: {employee.employee_id}</td>
+            <td>{employee.employee_id}</td>
             <td>{employee.full_name}</td>
-            <td>Email: {employee.email}</td>
+            <td>{employee.email}</td>
         </tr>
     );
 }
