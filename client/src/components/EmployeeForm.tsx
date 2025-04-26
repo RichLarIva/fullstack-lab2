@@ -7,7 +7,7 @@ const EmployeeForm = () =>
         employee_id: '',
         full_name: '',
         email: '',
-        hashed_password: ''
+        password: ''
     });
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) =>
@@ -30,7 +30,7 @@ const EmployeeForm = () =>
                 employee_id: '',
                 full_name: '',
                 email: '',
-                hashed_password: ''
+                password: ''
             });
         }
         catch (error)
@@ -70,7 +70,7 @@ const EmployeeForm = () =>
                 type="password"
                 name='hashed_password'
                 placeholder='Password'
-                value={employeeData.hashed_password}
+                value={employeeData.password}
                 onChange={handleInputChange}
                 required
             />
