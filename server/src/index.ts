@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-//const ip = require('ip'); // Importing the 'ip' module to get the server's IP address
+const ip = require('ip'); // Importing the 'ip' module to get the server's IP address
 import path from 'path';
 import connectDB from './config/db';
 import employeeRoutes from './routes/employees';
@@ -21,9 +21,9 @@ app.use('/api/v1/assignments', assignmentRoutes); // Project assignment routes
 
 
 
-//const ipAddress = ip.address(); // Get the IP address of the server
+const ipAddress = ip.address(); // Get the IP address of the server
 
 app.listen(PORT, () => {
-    //console.log(`Server is running on http://${ipAddress}:${PORT}`); // Log the server's IP address and port
-    console.log(`Server is running on http://localhost:${PORT}`); // Log the localhost address and port
+    console.log(`Server is running on http://${ipAddress}:${PORT}/api/v1/`); // Log the server's IP address and port
+    console.log(`Server is running on http://localhost:${PORT}/api/v1/`); // Log the localhost address and port
 })
