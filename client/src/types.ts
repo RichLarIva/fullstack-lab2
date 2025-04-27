@@ -15,15 +15,16 @@ export interface Project {
 }
 
 export interface ProjectAssignment {
-  _id: string;
-  employee_id: {
     _id: string;
-    full_name: string;
-  };
-  project_code: {
-    _id: string;
-    project_name: string;
-  };
-  start_date: string;
-}
+    employee_id: {
+      _id: string;
+      full_name: string;
+    };
+    project_code: {
+      _id: string;
+      project_name: string;
+    };
+    start_date: string;
+  }
+  
   

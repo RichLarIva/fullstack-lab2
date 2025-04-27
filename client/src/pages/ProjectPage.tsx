@@ -16,7 +16,7 @@ const ProjectPage = () =>
     <>
         <h2>Employee Management</h2>
       <button onClick={toggleView}>
-        {showForm ? "View Employees" : "Add New Employee"}
+        {showForm ? "View Projects" : "Add New Project"}
       </button>
       {showForm ? <ProjectForm /> : <EmployeeList />}
     </>

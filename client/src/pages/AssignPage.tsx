@@ -1,6 +1,6 @@
 import '../App.css';
 import AssignmentForm from "../components/AssignmentForm";
-import ProjectAssignmentList from "../components/ProjectAssignmentList";
+import ProjectAssignmentList from "../components/ProjectAssignmentList"
 import { useState } from "react";
 
 const ProjectAssignmentsPage = () => 

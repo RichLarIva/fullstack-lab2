@@ -10,7 +10,7 @@ const ProjectAssignmentList = () => {
 
   const fetchAssignments = async () => {
     try {
-      const response = await api.get("/project-assignments");
+      const response = await api.get("/assignments");
       setAssignments(response.data);
     } catch (error) {
       console.error("Error fetching project assignments:", error);

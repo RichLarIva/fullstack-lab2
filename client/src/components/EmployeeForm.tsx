@@ -68,7 +68,7 @@ const EmployeeForm = () =>
             />
             <input
                 type="password"
-                name='hashed_password'
+                name='password'
                 placeholder='Password'
                 value={employeeData.password}
                 onChange={handleInputChange}
