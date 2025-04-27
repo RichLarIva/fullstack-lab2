@@ -1,14 +1,26 @@
-import '../App.css'
-import EmployeeForm from '../components/EmployeeForm';
+import '../App.css';
+import AssignmentForm from "../components/AssignmentForm";
+import ProjectAssignmentList from "../components/ProjectAssignmentList";
+import { useState } from "react";
 
-const EmployeePage = () => 
+const ProjectAssignmentsPage = () => 
 {
+    const [showForm, setShowForm] = useState(true);
 
-  return (
-    <>
-        <EmployeeForm/>
-    </>
-  )
+    const toggleView = () => 
+    {
+        setShowForm((prev) => !prev);
+    }
+
+    return (
+        <>
+            <h2>Project Assignments</h2>
+            <button onClick={toggleView}>
+                {showForm ? "View Assignments" : "Assign Employee" }
+            </button>
+            {showForm ? <AssignmentForm /> : <ProjectAssignmentList />}
+        </>
+    );
 }
 
-export default EmployeePage;
+export default ProjectAssignmentsPage;
