@@ -1,6 +1,6 @@
 import '../App.css';
 import ProjectForm from "../components/ProjectForm";
-import ProjectList from "../components/ProjectList"; // ✅ Import ProjectList
+import ProjectList from "../components/ProjectList"; 
 import { useState } from "react";
 
 const ProjectPage = () => 
