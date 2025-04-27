@@ -1,9 +1,14 @@
 const MainPage = () => {
     return (
-      <div>
-        <h1>Welcome to the Main Page</h1>
-        <p>This is the main page content.</p>
-      </div>
+        <main style={{ padding: "20px", textAlign: "center" }}>
+            <h2>Welcome to the Fullstack Lab 2 App 🚀</h2>
+            <p>
+              Manage employees, projects, and assignments easily.
+            </p>
+            <p>
+              Use the navigation bar above to get started!
+            </p>
+      </main>
     );
   };
   

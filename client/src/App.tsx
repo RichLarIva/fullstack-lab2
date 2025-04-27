@@ -3,14 +3,14 @@ import EmployeePage from './pages/EmployeePage';
 import './App.css';
 import MainPage from './pages/MainPage';
 import AssignmentsPage from './pages/AssignPage';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import ProjectPage from './pages/ProjectPage';
 
 const App = () => {
   return (
     <>
     
-    <Navbar />
+    <Header />
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/employee" element={<EmployeePage />} />
