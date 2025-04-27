@@ -29,6 +29,14 @@ const Navbar = () => {
             📝 Assign Project
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+          >
+            📝 Projects
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
