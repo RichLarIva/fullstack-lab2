@@ -1,6 +1,6 @@
-import '../App.css'
+import '../App.css';
 import ProjectForm from "../components/ProjectForm";
-import EmployeeList from "../components/EmployeeList";
+import ProjectList from "../components/ProjectList"; // ✅ Import ProjectList
 import { useState } from "react";
 
 const ProjectPage = () => 
@@ -12,15 +12,15 @@ const ProjectPage = () =>
         setShowForm((prev) => !prev);
     }
 
-  return (
-    <>
-        <h2>Employee Management</h2>
-      <button onClick={toggleView}>
-        {showForm ? "View Projects" : "Add New Project"}
-      </button>
-      {showForm ? <ProjectForm /> : <EmployeeList />}
-    </>
-  )
+    return (
+        <>
+            <h2>Project Management</h2> {/* ✅ Correct title */}
+            <button onClick={toggleView}>
+                {showForm ? "View Projects" : "Add New Project"}
+            </button>
+            {showForm ? <ProjectForm /> : <ProjectList />}
+        </>
+    );
 }
 
 export default ProjectPage;
